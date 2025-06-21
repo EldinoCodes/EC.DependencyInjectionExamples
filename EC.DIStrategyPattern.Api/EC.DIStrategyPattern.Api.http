@@ -1,0 +1,63 @@
+@EC.DIStrategyPattern.Api_HostAddress = https://localhost:5001
+
+POST {{EC.DIStrategyPattern.Api_HostAddress}}/Orders/
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": "customer1",
+  "orderNumber": "customer1_order1"
+}
+
+###
+
+POST {{EC.DIStrategyPattern.Api_HostAddress}}/Orders/
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": "customer2",
+  "orderNumber": "customer2_order1"
+}
+
+###
+
+POST {{EC.DIStrategyPattern.Api_HostAddress}}/Orders/
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": "normalcustomer",
+  "orderNumber": "normalcustomer_order1"
+}
+
+###
+
+
+
+POST {{EC.DIStrategyPattern.Api_HostAddress}}/StatusUpdates/
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": "customer1",
+  "orderNumber": "customer1_order1"
+}
+
+###
+
+POST {{EC.DIStrategyPattern.Api_HostAddress}}/StatusUpdates/
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": "customer2",
+  "orderNumber": "customer2_order1"
+}
+
+###
+
+POST {{EC.DIStrategyPattern.Api_HostAddress}}/StatusUpdates/
+Accept: application/json
+Content-Type: application/json
+{
+  "customerId": "normalcustomer",
+  "orderNumber": "normalcustomer_order1"
+}
+
+###
